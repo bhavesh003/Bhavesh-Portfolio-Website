@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Roboto&family=Source+Code+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    margin: 0 60px;
+    width: 87vw;
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(193, 185, 185);
+    font-family: 'Roboto', sans-serif;
+    height: 110vh;
+    line-height: 50px;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    margin: 31px 35px 15px 12px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding-top: 20px 0px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    height: 60vh;
+    width: 80vw;
+    margin: 48px 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.moreabout{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.sm{
+    display: flex;
+}
+.smitems{
+    margin: 0px 0px 0px 20px;
+}
+.btn{
+    padding: 4px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 17px 0px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+.devpic img {
+    height: 60vh;
+}
+.contactform{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20spx;
+    padding: 0px 30px;
+    margin: 40px 0px 0px 10px;
+}
+.contactform h2{
+    font-family: 'Merriweather', serif;
+    text-align: inherit;
+    padding: 26px;
+}
+.contactform form div{
+    padding: 6px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 39vw;
+    border-radius: 15px;
+    margin: 6px 0px 16px 0px;
+    padding: 5px;
+}
+.contactform button{
+    margin: 10px;
+    width: 89px;
+}
+.contactform form div label{
+    margin: -10px 0 0 0px;
+}
+#emailHelp{
+    font-size: 15px;
+    color: blue;
+    margin: 1px 14px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 40px;
+    margin: -6px 0px;
+}
+.blogcontainer{
+    margin: 0 10px;
+}
+.blogitem{
+    margin: 20px;
+}
+h1{
+    margin: 20px;
+}
+.intro{
+    margin: 40px 0px 0px 40px;
+}
+.intro h2{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Poppins', sans-serif;
+    margin: 19px 30px;
+}
+.intro p{
+    font-family: 'Poppins', sans-serif;
+    margin: -10px 30px 10px 25px;
+    /* margin-left: 100px; */
+    padding: 10px;
+}
+.academics{
+    line-height: 23px;
+}
+.academicdetails{
+    font-family: 'Poppins', sans-serif;
+    padding: 24px;
+    margin: -20px 30px 0 10px;
+}
+.college{
+font-weight: bold;
+font-size: 18px;
+}
+.course{
+    margin-top: 5px;
+    font-size: 16px;
+}
+.courseyr{
+    margin-top: 3px;
+    font-size: 14px;
+}
+.courseabout{
+    margin-top: -2px;
+    font-size: 12px;
+}
+.skillcontainer{
+    padding: 24px;
+    margin: -20px 30px 0 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.skillitem{
+    font-family: 'Poppins', sans-serif;
+    /* display: flex;  */
+    /* align-items: center; */
+}
+.plskills{
+    /* float:left;  */
+    width:15%;
+    line-height: 25px;
+}
+.otherskills{
+    /* float:left;  */
+    width:15%;
+    line-height: 25px;
+}
+.sidebargo{
+    transform: translate(-230px,0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 7px;
+    left: 20px;
+}
+.cross{
+    margin-left: 88px;
+}
+@media (max-width: 1260px){
+    .devpic{
+        display: none;
+    }
+    .intro, .blogcontainer, .contactform{
+        margin: 50px -50px;
+    }
+    .main{
+        margin: 20px;
+    }
+}
