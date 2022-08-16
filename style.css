@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
 }
+.main1{
+    margin: 0 60px;
+    width: 87vw;
+}
 .main{
     margin: 0 60px;
     width: 87vw;
@@ -203,12 +207,15 @@ font-size: 18px;
 }
 @media (max-width: 1260px){
     .devpic{
-        display: none;
-    }
+        height: 15vh;
+    } 
     .intro, .blogcontainer, .contactform{
-        margin: 50px -50px;
+        margin: -22px 0 0 -83px;
     }
     .main{
-        margin: 20px;
+        margin: 40px 0 0 50px;
+    }
+    .main1{
+        margin: -13px 0 0 -77px;
     }
 }
