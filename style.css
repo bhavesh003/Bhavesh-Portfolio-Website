@@ -5,6 +5,30 @@
     box-sizing: border-box;
 }
 
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 5;
+    text-align: center;
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav_link:hover {
+    color: #ff7f00;
+}
+
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +51,7 @@ body {
 }
 
 .main{
-    margin: 30px 30px 30px 30px;
+    margin: 100px 30px 100px 30px;
 }
 
 /* Header Styles */
