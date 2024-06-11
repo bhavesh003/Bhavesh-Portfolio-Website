@@ -13,13 +13,12 @@ body {
     line-height: 1.6;
 }
 
-/* dev pic */
+/* Devpic Styles */
 .devpic img {
     border-radius: 50%;
     width: 350px; /* Adjust the width as needed */
     height: 350px; /* Adjust the height as needed */
 }
-
 
 .container {
     max-width: 1200px;
@@ -142,6 +141,12 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+    .devpic img {
+        border-radius: 50%;
+        width: 100px; 
+        height: 100px; 
+    }
     .infocontainer,
     .about_container,
     .academics_container,
@@ -218,4 +223,29 @@ body {
 
 .project_link a:hover {
     background-color: #0056b3;
+}
+
+/* Skill Section Styles */
+.skill_category_section {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_category {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed for spacing between categories */
+}
+
+.skill_category:last-child {
+    margin-right: 0;
+}
+
+.skill_list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill_list_item {
+    margin-bottom: 5px;
 }
