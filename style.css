@@ -157,6 +157,10 @@ body {
         padding: 20px;
     }
 
+    .skill_category_section{
+        padding: -22px;
+    }
+
     .name {
         font-size: 28px;
     }
