@@ -1,222 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&family=Source+Code+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&family=Roboto&family=Source+Code+Pro:wght@200&display=swap');
-
-*{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    /* background-color: whitesmoke; */
+    box-sizing: border-box;
 }
-.main1{
-    margin: 0 60px;
-    width: 87vw;
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
 }
-.main{
-    margin: 0 60px;
-    width: 87vw;
-}
-.sidebar{
-    position: absolute;
-    background-color: rgb(193, 185, 185);
-    font-family: 'Roboto', sans-serif;
-    height: 110vh;
-    line-height: 50px;
-    transition: transform 0.3s ease-in;
-}
-.sidebar nav{
-    margin: 31px 35px 15px 12px;
-}
-.sidebar nav li{
-    list-style: none;
-    font-size: 20px;
-    padding-top: 20px 0px;
-}
-.sidebar nav li a{
-    text-decoration: none;
-    color: black;
-}
-.container{
-    display: flex;
-}
-.infocontainer{
-    height: 60vh;
-    width: 80vw;
-    margin: 48px 100px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.devinfo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-}
-.name{
-    font-family: 'Poppins', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-}
-.moreabout{
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-}
-.sm{
-    display: flex;
-}
-.smitems{
-    margin: 0px 0px 0px 20px;
-}
-.btn{
-    padding: 4px 20px;
-    border-radius: 30px;
-    color: white;
-    background-color: dodgerblue;
-    font-weight: bold;
-    font-size: 13px;
-    margin: 17px 0px;
-    cursor: pointer;
-}
-.btn:hover{
-    color: dodgerblue;
-    background-color: white;
-}
+
+/* dev pic */
 .devpic img {
-    height: 60vh;
+    border-radius: 50%;
+    width: 350px; /* Adjust the width as needed */
+    height: 350px; /* Adjust the height as needed */
 }
-.contactform{
-    font-family: 'Roboto', sans-serif;
-    padding-top: 20spx;
-    padding: 0px 30px;
-    margin: 40px 0px 0px 10px;
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Added margin */
+    padding: 20px;
 }
-.contactform h2{
-    font-family: 'Merriweather', serif;
-    text-align: inherit;
-    padding: 26px;
+
+.main{
+    margin: 30px 30px 30px 30px;
 }
-.contactform form div{
-    padding: 6px 20px;
+
+/* Header Styles */
+.name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.moreabout {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+.infocontainer {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Added margin */
 }
-.contactform form div input{
-    width: 39vw;
-    border-radius: 15px;
-    margin: 6px 0px 16px 0px;
-    padding: 5px;
+
+.infocontainer:hover {
+    transform: translateY(-5px);
 }
-.contactform button{
-    margin: 10px;
-    width: 89px;
+
+.about_container,
+.academics_container,
+.project_container,
+.certification_container,
+.skill_container,
+.socialmedia_container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
 }
-.contactform form div label{
-    margin: -10px 0 0 0px;
+
+.about_container:hover,
+.academics_container:hover,
+.project_container:hover,
+.certification_container:hover,
+.skill_container:hover,
+.socialmedia_container:hover {
+    transform: translateY(-5px);
 }
-#emailHelp{
-    font-size: 15px;
-    color: blue;
-    margin: 1px 14px;
+
+.about_container h2,
+.academics_container h2,
+.project_container h2,
+.certification_container h2,
+.skill_container h2,
+.socialmedia_container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
 }
-#form-check{
-    flex-direction: row;
+
+.academicdetails {
+    margin-bottom: 20px;
 }
-#form-check input{
-    width: 40px;
-    margin: -6px 0px;
+
+.cer_name,
+.cer_comp,
+.college,
+.course,
+.courseyr {
+    margin-bottom: 10px;
 }
-.blogcontainer{
-    margin: 0 10px;
+
+/* Footer Styles */
+.socialmedia_items {
+    margin-right: 15px;
 }
-.blogitem{
-    margin: 20px;
-}
-h1{
-    margin: 20px;
-}
-.intro{
-    margin: 40px 0px 0px 40px;
-}
-.intro h2{
-    /* font-family: 'Merriweather', serif; */
-    font-family: 'Poppins', sans-serif;
-    margin: 19px 30px;
-}
-.intro p{
-    font-family: 'Poppins', sans-serif;
-    margin: -10px 30px 10px 25px;
-    /* margin-left: 100px; */
-    padding: 10px;
-}
-.academics{
-    line-height: 23px;
-}
-.academicdetails{
-    font-family: 'Poppins', sans-serif;
-    padding: 24px;
-    margin: -20px 30px 0 10px;
-}
-.college{
-font-weight: bold;
-font-size: 18px;
-}
-.course{
-    margin-top: 5px;
+
+/* Interactive Styles */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
-}
-.courseyr{
-    margin-top: 3px;
-    font-size: 14px;
-}
-.courseabout{
-    margin-top: -2px;
-    font-size: 12px;
-}
-.skillcontainer{
-    padding: 24px;
-    margin: -20px 30px 0 10px;
-    font-family: 'Roboto', sans-serif;
-}
-.skillitem{
-    font-family: 'Poppins', sans-serif;
-    /* display: flex;  */
-    /* align-items: center; */
-}
-.plskills{
-    /* float:left;  */
-    width:15%;
-    line-height: 25px;
-}
-.otherskills{
-    /* float:left;  */
-    width:15%;
-    line-height: 25px;
-}
-.sidebargo{
-    transform: translate(-230px,0px);
-    position: absolute;
-}
-.hamburger{
-    position: absolute;
     cursor: pointer;
-    top: 7px;
-    left: 20px;
+    transition: background-color 0.3s ease;
 }
-.cross{
-    margin-left: 88px;
+
+.btn:hover {
+    background-color: #0056b3;
 }
-@media (max-width: 1260px){
-    .devpic{
-        height: 15vh;
-    } 
-    .intro, .blogcontainer, .contactform{
-        margin: -22px 0 0 -83px;
+
+.socialmedia_items img {
+    transition: transform 0.3s ease;
+}
+
+.socialmedia_items:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .infocontainer,
+    .about_container,
+    .academics_container,
+    .project_container,
+    .certification_container,
+    .skill_container,
+    .socialmedia_container {
+        padding: 20px;
     }
-    .main{
-        margin: 40px 0 0 50px;
+
+    .name {
+        font-size: 28px;
     }
-    .main1{
-        margin: -13px 0 0 -77px;
+
+    .moreabout {
+        font-size: 16px;
     }
+
+    .about_container h2,
+    .academics_container h2,
+    .project_container h2,
+    .certification_container h2,
+    .skill_container h2,
+    .socialmedia_container h2 {
+        font-size: 20px;
+    }
+}
+
+/* Project Section Styles */
+#project_section {
+    margin-bottom: 30px;
+}
+
+.project_container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.projectdetails {
+    margin-bottom: 20px;
+}
+
+.project_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project_description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.technologies_used {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.project_link a {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.project_link a:hover {
+    background-color: #0056b3;
 }
