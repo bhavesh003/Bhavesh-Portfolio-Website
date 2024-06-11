@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
 /* Navigation Bar Styles */
 .navbar {
   position: fixed;
@@ -27,14 +35,6 @@
 
 .nav_link:hover {
   color: #ff7f00;
-}
-
-/* Global Styles */
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
 }
 
 /* Devpic Styles */
@@ -145,7 +145,7 @@ body {
 
 .academics_container > .box-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   gap: 20px;
 }
 
@@ -294,42 +294,40 @@ body {
 }
 
 /* Responsive Styles */
+
 @media (max-width: 768px) {
-  .devpic img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-  }
-  .infocontainer,
-  .about_container,
-  .academics_container,
-  .project_container,
-  .interest_container,
-  .certification_container,
-  .skill_container,
-  .socialmedia_container {
-    padding: 20px;
-  }
 
-  .skill_category_section {
-    padding: -22px;
-  }
+    .main {
+        margin: 80px 10px;
+    }
 
-  .name {
-    font-size: 28px;
-  }
+    .infocontainer,
+    .about_container,
+    .academics_container,
+    .project_container,
+    .certification_container,
+    .interest_container,
+    .skill_container,
+    .socialmedia_container {
+        padding: 15px;
+        width: auto; /* Ensure containers take full width */
+        box-sizing: border-box; /* Include padding in width calculation */
+        overflow:auto; /*Prevent content from overflowing*/
+        align-self: auto;
+        
+    }
 
-  .moreabout {
-    font-size: 16px;
-  }
+    .box-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 
-  .about_container h2,
-  .academics_container h2,
-  .project_container h2,
-  .certification_container h2,
-  .skill_container h2,
-  .interest_container h2,
-  .socialmedia_container h2 {
-    font-size: 20px;
-  }
+    .box {
+        padding: 15px;
+        width: auto; /* Ensure boxes take full width */
+    }
+
+    .devpic img {
+        width: 150px;
+        height: 150px;
+    }
 }
