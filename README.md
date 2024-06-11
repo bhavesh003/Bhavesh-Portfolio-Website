@@ -18,4 +18,4 @@ This portfolio website serves as a platform to display my projects, skills, and 
 
 Feel free to contact me if you have any questions or feedback regarding this project:
 
-- **LinkedIn:** [(https://www.linkedin.com/in/the-bhavesh-03/)]
+- **LinkedIn:** [https://www.linkedin.com/in/the-bhavesh-03/]
