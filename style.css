@@ -146,12 +146,15 @@ body {
 .academics_container > .box-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  /* grid-template-columns:auto; */
   gap: 20px;
+  /* width: auto; */
 }
 
 .certification_container > .box-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* grid-template-columns:auto; */
   gap: 20px;
 }
 
@@ -159,6 +162,18 @@ body {
 .socialmedia_items {
   margin-right: 15px;
 }
+
+.socialmedia_container > .box-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 0fr));
+  /* grid-template-columns:auto; */
+  gap: 20px;
+  /* align-items: center; */
+  
+  /* justify-items:center; */
+  /* justify-content: center; */
+}
+
 
 /* Interactive Styles */
 .btn {
@@ -192,6 +207,7 @@ body {
 .project_container > .box-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* grid-template-columns:auto; */
   gap: 20px;
 }
 
@@ -265,11 +281,18 @@ body {
   margin-bottom: 5px;
 }
 
+.skill_container > .box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns:auto; */
+  gap: 20px;
+}
+
 /* interest */
 
 .box-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
   gap: 20px;
 }
 
@@ -313,17 +336,21 @@ body {
         width: auto; /* Ensure containers take full width */
         box-sizing: border-box; /* Include padding in width calculation */
         overflow:auto; /*Prevent content from overflowing*/
-        align-self: auto;
+        /* align-self: auto; */
         
     }
 
     .box-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+        grid-template-columns: auto;
+        width: auto;
+        gap: 2px;
     }
 
     .box {
         padding: 15px;
-        width: auto; /* Ensure boxes take full width */
+        width: auto; /*Ensure boxes take full width*/
     }
 
     .devpic img {
