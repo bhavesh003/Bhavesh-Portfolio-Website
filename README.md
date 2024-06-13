@@ -20,4 +20,4 @@ Feel free to contact me if you have any questions or feedback regarding this pro
 
 - **LinkedIn:** [https://www.linkedin.com/in/the-bhavesh-03/]
 
-## Website : https://bhavesh003.github.io/bhavesh-portfolio-web/
+## Website : https://bhavesh003.github.io/Bhavesh-Portfolio-Website/
