@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavesh Hiray - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="navbar">
-        <!-- <a href="#" class="menu-toggle">&#9776;</a> -->
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         <div class="nav-links">
             <a href="#home_section" class="nav_link">Home</a>
             <a href="#about_section" class="nav_link">About</a>
+            <a href="#experience_section" class="nav_link">Experience</a>
             <a href="#academic_section" class="nav_link">Education</a>
             <a href="#project_section" class="nav_link">Projects</a>
             <a href="#certification_section" class="nav_link">Certifications</a>
             <a href="#intro_section" class="nav_link">Skills</a>
+            <a href="#interests_section" class="nav_link">Interests</a>
             <a href="#contact_section" class="nav_link">Contact</a>
         </div>
     </div>
@@ -41,7 +46,7 @@
                     </div>
 
                     <div class="devpic">
-                        <img src="source/dev.JPG" alt="Bhavesh Hiray">
+                        <img src="source/dev.JPG" alt="Bhavesh Hiray" loading="lazy" decoding="async">
                     </div>
 
                 </div>
@@ -49,72 +54,73 @@
 
             <div id="about_section">
                 <div class="about_container">
-                    <p>Hey folks! 👋I’m Bhavesh Hiray — a software developer with a passion for clean code, creative
+                    <p>👋 Hi, I’m Bhavesh Hiray — a software developer with a passion for clean code, creative
                         solutions, and continuous learning. I’ve recently completed my MCA from MIT-WPU, Pune, and
                         wrapped up an enriching internship at Universal Tech, where I built real-world SaaS
                         applications, customised WordPress sites, and worked across the full stack.
-                        <br>
+
                         💻 From crafting Java-based backends to designing responsive UIs with HTML, CSS, JavaScript, and
                         PHP, I love bringing ideas to life through code. I’ve worked with tools like Git, MySQL, and the
                         LEMP stack — and I'm always exploring ways to optimise performance, write maintainable code, and
                         stay updated with industry trends.
-                        <br>
+
                         🧠 What drives me? Solving real problems, learning something new every day, and collaborating
                         with teams that build with purpose.
-                        <br>
+
                         🌐 Whether it's building full-stack apps, enhancing WordPress functionality, or diving into
                         machine learning models, I’m ready to take on new challenges and contribute to impactful
                         software projects.
-                        <br>
+
                         🚀 Let’s connect if you're looking for a curious mind, a team player, and a developer who’s
-                        all-in for the journey ahead.
-                    </p>
+                        all-in for the journey ahead.</p>
+                </div>
+            </div>
+
+            <div id="experience_section">
+                <div class="experience_container">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline_item box">
+                            <div class="experience_role"><b>Software Developer Intern</b> | Universal Tech</div>
+                            <div class="experience_duration">Jan 2025 – June 2025</div>
+                            <ul class="skill_list">
+                                <li class="skill_list_item">Developed SaaS applications, client websites, and WordPress-based solutions in a remote team environment.</li>
+                                <li class="skill_list_item">Built custom WordPress plugins and themes; optimized site speed and responsiveness.</li>
+                                <li class="skill_list_item">Worked across the stack using HTML, CSS, JavaScript, PHP, MySQL, and Nginx. Used Git, Linux CLI, and DevTools for version control, debugging, and deployment.</li>
+                                <li class="skill_list_item">Improved UI consistency by aligning 10+ components with Figma specs, increasing user engagement by 15%.</li>
+                                <li class="skill_list_item">Delivered responsive UIs, integrated third‑party APIs, and configured LEMP environments; practiced SDLC and Agile collaboration.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div id="academic_section">
                 <div class="academics_container">
                     <h2>Education</h2>
-
-                    <div class="box-grid">
-
-                        <div class="box">
-                            <div class="academicdetails">
-                                <div class="college"><b>Master of Computer Application</b></div>
-                                <div class="course">MIT World Peace University, Pune, Maharashtra</div>
-                                <div class="courseyr">Aug 2023 - June 2025</div>
-                                <div class="courseyr">CGPA: 8.55</div>
-                            </div>
+                    <div class="timeline">
+                        <div class="timeline_item box">
+                            <div class="college"><b>Master of Computer Application (MCA)</b></div>
+                            <div class="course">MIT World Peace University, Pune, Maharashtra</div>
+                            <div class="courseyr">Aug 2023 – June 2025 • CGPA: 8.55</div>
                         </div>
 
-                        <div class="box">
-                            <div class="academicdetails">
-                                <div class="college"><b>Bachelor of Computer Application</b></div>
-                                <div class="course">MES Abasaheb Garware College, Pune, Maharashtra</div>
-                                <div class="courseyr">Sep 2020 - Jun 2023</div>
-                                <div class="courseyr">CGPA: 8.85</div>
-                            </div>
+                        <div class="timeline_item box">
+                            <div class="college"><b>Bachelor of Computer Application (BCA)</b></div>
+                            <div class="course">MES Abasaheb Garware College, Pune, Maharashtra</div>
+                            <div class="courseyr">Sep 2020 – Jun 2023 • CGPA: 8.84</div>
                         </div>
 
-                        <div class="box">
-                            <div class="academicdetails">
-                                <div class="college"><b>HSC</b></div>
-                                <div class="course">Maharaja Sayajirao Gaikwad Arts, Science & Commerce College,
-                                    Malegaon,
-                                    Dist.Nashik, Maharashtra</div>
-                                <div class="courseyr">Jun 2019 - Mar 2020</div>
-                                <div class="courseyr">Grade: 78%</div>
-                            </div>
+                        <div class="timeline_item box">
+                            <div class="college"><b>HSC</b></div>
+                            <div class="course">Maharaja Sayajirao Gaikwad Arts, Science & Commerce College, Malegaon, Dist. Nashik, Maharashtra</div>
+                            <div class="courseyr">Jun 2019 – Mar 2020 • Percentage: 78.46%</div>
                         </div>
 
-                        <div class="box">
-                            <div class="academicdetails">
-                                <div class="college"><b>SSC</b></div>
-                                <div class="course">Ratilal Virchand Shah Vidyalaya, Malegaon, Dist.Nashik, Maharashtra
-                                </div>
-                                <div class="courseyr">Jun 2017 - Mar 2018</div>
-                                <div class="courseyr">Grade: 91%</div>
-                            </div>
+                        <div class="timeline_item box">
+                            <div class="college"><b>SSC</b></div>
+                            <div class="course">Ratilal Virchand Shah Vidyalaya, Malegaon, Dist. Nashik, Maharashtra</div>
+                            <div class="courseyr">Jun 2017 – Mar 2018 • Percentage: 91.20%</div>
                         </div>
                     </div>
                 </div>
@@ -124,11 +130,11 @@
                 <div class="project_container">
                     <h2>Projects</h2>
 
-                    <div class="box-grid">
+                    <div class="projects_grid">
 
                         <div class="box">
                             <div class="projectdetails">
-                                <div class="project_title">DineEase : Order in Restraurent</a>
+                                <div class="project_title">DineEase: Order in Restaurant
                                 </div>
                                 <div class="project_description">Customers can scan our QR placed on the table. It will
                                     redirect to a website where customers can see the hotel's food menu. Customers will
@@ -137,7 +143,11 @@
                                     customer. Customers can re-order also. In the end, customers see their bills on the
                                     website and pay from there. It will save time in taking orders and there will be no
                                     mischief on the hotel bill.</div>
-                                <div class="technologies_used"><u>Technologies used:</u> HTML, CSS, JavaScript</div>
+                                <ul class="tech_pills">
+                                    <li class="pill tech">HTML</li>
+                                    <li class="pill tech">CSS</li>
+                                    <li class="pill tech">JavaScript</li>
+                                </ul>
                                 <div class="buttons">
                                     <br>
                                     <a href="https://bhavesh003.github.io/DineEase-OrderFood-in-Restaurant/"
@@ -150,10 +160,7 @@
 
                         <div class="box">
                             <div class="projectdetails">
-                                <div class="project_title">Expression
-                                    Gesture
-                                    to
-                                    Emoji</a></div>
+                                <div class="project_title">Expression Gesture to Emoji</div>
                                 <div class="project_description">The Expression to Emoji Converter is a project aimed at
                                     recognizing facial expressions and gestures from webcam input and converting them
                                     into
@@ -161,9 +168,13 @@
                                     machine
                                     learning algorithms, and human-computer interaction principles to enable intuitive
                                     communication through emojis.</div>
-                                <div class="technologies_used"><u>Technologies used:</u> Python, OpenCV, Mediapipe,
-                                    Keras,
-                                    TensorFlow</div>
+                                <ul class="tech_pills">
+                                    <li class="pill tech">Python</li>
+                                    <li class="pill tech">OpenCV</li>
+                                    <li class="pill tech">Mediapipe</li>
+                                    <li class="pill tech">Keras</li>
+                                    <li class="pill tech">TensorFlow</li>
+                                </ul>
                                 <div class="buttons">
                                     <br>
                                     <a href="https://github.com/bhavesh003/Expression-Gesture-to-Emoji"
@@ -174,12 +185,14 @@
 
                         <div class="box">
                             <div class="projectdetails">
-                                <div class="project_title">Expense and Income
-                                    Tracker</a></div>
+                                <div class="project_title">Expense and Income Tracker</div>
                                 <div class="project_description">A simple Java-based application for tracking expenses
                                     and incomes. Manage your financial transactions with an easy-to-use interface.</div>
-                                <div class="technologies_used"><u>Technologies used:</u> Java, Swing (for the GUI),
-                                    FlatLaf (Look and Feel library)</div>
+                                <ul class="tech_pills">
+                                    <li class="pill tech">Java</li>
+                                    <li class="pill tech">Swing</li>
+                                    <li class="pill tech">FlatLaf</li>
+                                </ul>
                                 <div class="buttons">
                                     <br>
                                     <a href="https://github.com/bhavesh003/Expense_Income_Tracker"
@@ -190,12 +203,16 @@
 
                         <div class="box">
                             <div class="projectdetails">
-                                <div class="project_title">Personal Portfolio Website</a></div>
+                                <div class="project_title">Personal Portfolio Website</div>
                                 <div class="project_description">This portfolio website serves as a platform to display
                                     my projects, skills, and professional experience. It features a responsive design,
                                     smooth scrolling navigation, dynamic content loading, and interactive elements.
                                 </div>
-                                <div class="technologies_used"><u>Technologies used:</u> HTML, CSS, JavaScript</div>
+                                <ul class="tech_pills">
+                                    <li class="pill tech">HTML</li>
+                                    <li class="pill tech">CSS</li>
+                                    <li class="pill tech">JavaScript</li>
+                                </ul>
                                 <div class="buttons">
                                     <br>
                                     <a href="https://bhavesh003.github.io/Bhavesh-Portfolio-Website/"
@@ -260,44 +277,82 @@
                 <div class="skill_container">
                     <h2>Skills</h2>
 
-                    <div class="box-grid">
-                        <!-- <div class="skill_category_section"> -->
-                        <div class="skill_category">
-                            <div class="box">
-                                <h4>Technologies</h4>
-                                <ul class="skill_list">
-                                    <li class="skill_list_item">C</li>
-                                    <li class="skill_list_item">Java</li>
-                                    <li class="skill_list_item">Java Frameworks: JDBC, Servlet</li>
-                                    <li class="skill_list_item">C++</li>
-                                    <li class="skill_list_item">HTML</li>
-                                    <li class="skill_list_item">CSS</li>
-                                    <li class="skill_list_item">JavaScript</li>
-                                    <li class="skill_list_item">MySQL</li>
-                                    <li class="skill_list_item">PHP</li>
-                                </ul>
-                            </div>
-
+                    <div class="skills_grid">
+                        <div class="box skill_card">
+                            <h4>Programming Languages</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">Java</li>
+                                <li class="pill">SQL</li>
+                                <li class="pill">Python</li>
+                                <li class="pill">JavaScript</li>
+                            </ul>
                         </div>
 
-                        <div class="box">
-                            <div class="skill_category">
-                                <h4>Tools</h4>
-                                <ul class="skill_list">
-                                    <li class="skill_list_item">Git</li>
-                                    <li class="skill_list_item">Visual Studio Code</li>
-                                    <li class="skill_list_item">Photoshop</li>
-                                    <li class="skill_list_item">MS Office</li>
-                                </ul>
-                            </div>
+                        <div class="box skill_card">
+                            <h4>Database Management</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">MySQL</li>
+                                <li class="pill">PostgreSQL</li>
+                                <li class="pill">MongoDB</li>
+                            </ul>
                         </div>
 
+                        <div class="box skill_card">
+                            <h4>Web Development</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">HTML</li>
+                                <li class="pill">CSS</li>
+                                <li class="pill">Bootstrap</li>
+                                <li class="pill">PHP</li>
+                                <li class="pill">JavaScript</li>
+                                <li class="pill">WordPress (Themes)</li>
+                                <li class="pill">WordPress (Plugins)</li>
+                            </ul>
+                        </div>
+
+                        <div class="box skill_card">
+                            <h4>Tools</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">Git</li>
+                                <li class="pill">GitHub</li>
+                                <li class="pill">Visual Studio Code</li>
+                                <li class="pill">MySQL Workbench</li>
+                                <li class="pill">phpMyAdmin</li>
+                                <li class="pill">Eclipse</li>
+                                <li class="pill">Canva</li>
+                                <li class="pill">MS Office</li>
+                            </ul>
+                        </div>
+
+                        <div class="box skill_card">
+                            <h4>Technical Knowledge</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">Object-Oriented Programming (OOP)</li>
+                                <li class="pill">SQL Integration</li>
+                                <li class="pill">RDBMS</li>
+                                <li class="pill">Machine Learning (Supervised & Unsupervised)</li>
+                                <li class="pill">API Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="box skill_card">
+                            <h4>Soft Skills</h4>
+                            <ul class="skill_pills">
+                                <li class="pill">Adaptability</li>
+                                <li class="pill">Flexibility</li>
+                                <li class="pill">Leadership</li>
+                                <li class="pill">Collaboration</li>
+                                <li class="pill">Teamwork</li>
+                                <li class="pill">Problem‑Solving</li>
+                                <li class="pill">Communication</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="intro_section">
+        <div id="interests_section">
             <div class="interest_container">
                 <h2>Interests & Hobbies</h2>
 
@@ -330,32 +385,40 @@
                 <div class="box-grid">
 
                     <div class="box">
-                        <a class="socialmedia_items" href="https://www.linkedin.com/in/the-bhavesh-03/">
-                            <img alt="LinkedIn" src="source/lkd.png" width="50">
+                        <a class="socialmedia_items" href="https://www.linkedin.com/in/the-bhavesh-03/" target="_blank"
+                            rel="noopener">
+                            <img alt="LinkedIn" src="source/lkd.png" width="50" height="50" loading="lazy"
+                                decoding="async">
                         </a>
                         <p>LinkedIn</p>
                     </div>
 
                     <div class="box">
-                        <a class="socialmedia_items" href="https://github.com/bhavesh003">
-                            <img alt="GitHub" src="source/gh.png" width="50">
+                        <a class="socialmedia_items" href="https://github.com/bhavesh003" target="_blank"
+                            rel="noopener">
+                            <img alt="GitHub" src="source/gh.png" width="50" height="50" loading="lazy"
+                                decoding="async">
                         </a>
                         <p>GitHub</p>
                     </div>
                     <div class="box">
-                        <a class="socialmedia_items" href="https://www.instagram.com/the_bhavesh_03">
-                            <img alt="instagram" src="source/ig.png" width="50">
+                        <a class="socialmedia_items" href="https://www.instagram.com/the_bhavesh_03" target="_blank"
+                            rel="noopener">
+                            <img alt="Instagram" src="source/ig.png" width="50" height="50" loading="lazy"
+                                decoding="async">
                         </a>
                         <p>Instagram</p>
                     </div>
                     <div class="box">
-                        <a class="socialmedia_items" href="https://www.hackerrank.com/profile/itsbhavesh03"><img
-                                alt="hackerrank" src="source/hr.webp" width="50"></a>
+                        <a class="socialmedia_items" href="https://www.hackerrank.com/profile/itsbhavesh03"
+                            target="_blank" rel="noopener"><img alt="HackerRank" src="source/hr.webp" width="50"
+                                height="50" loading="lazy" decoding="async"></a>
                         <p>HackerRank</p>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="footer"><a href="#home_section">Back to top</a></footer>
     </div>
     </div>
 </body>
