@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress"></div>
+    
     <div class="navbar">
         <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         <div class="nav-links">
@@ -27,12 +30,19 @@
             <a href="#interests_section" class="nav_link">Interests</a>
             <a href="#contact_section" class="nav_link">Contact</a>
         </div>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-icon">☀️</span>
+        </button>
     </div>
 
     <div class="main">
         <div class="main2">
             <div id="home_section">
                 <div class="infocontainer">
+
+                    <div class="devpic">
+                        <img src="source/dev.JPG" alt="Bhavesh Hiray" loading="lazy" decoding="async">
+                    </div>
 
                     <div class="devinfo">
                         <div class="name">Bhavesh Hiray</div>
@@ -45,34 +55,78 @@
                         </div>
                     </div>
 
-                    <div class="devpic">
-                        <img src="source/dev.JPG" alt="Bhavesh Hiray" loading="lazy" decoding="async">
-                    </div>
-
                 </div>
             </div>
 
             <div id="about_section">
                 <div class="about_container">
-                    <p>👋 Hi, I’m Bhavesh Hiray — a software developer with a passion for clean code, creative
-                        solutions, and continuous learning. I’ve recently completed my MCA from MIT-WPU, Pune, and
-                        wrapped up an enriching internship at Universal Tech, where I built real-world SaaS
-                        applications, customised WordPress sites, and worked across the full stack.
-
-                        💻 From crafting Java-based backends to designing responsive UIs with HTML, CSS, JavaScript, and
-                        PHP, I love bringing ideas to life through code. I’ve worked with tools like Git, MySQL, and the
-                        LEMP stack — and I'm always exploring ways to optimise performance, write maintainable code, and
-                        stay updated with industry trends.
-
-                        🧠 What drives me? Solving real problems, learning something new every day, and collaborating
-                        with teams that build with purpose.
-
-                        🌐 Whether it's building full-stack apps, enhancing WordPress functionality, or diving into
-                        machine learning models, I’m ready to take on new challenges and contribute to impactful
-                        software projects.
-
-                        🚀 Let’s connect if you're looking for a curious mind, a team player, and a developer who’s
-                        all-in for the journey ahead.</p>
+                    <h2>About Me</h2>
+                    <div class="about_content">
+                        <div class="about_intro">
+                            <h3>👋 Hi, I'm Bhavesh Hiray</h3>
+                            <p>A software developer with a passion for clean code, creative solutions, and continuous learning.</p>
+                        </div>
+                        
+                        <div class="about_sections">
+                            <div class="about_section_item">
+                                <div class="about_icon">🎓</div>
+                                <div class="about_text">
+                                    <h4>Education & Background</h4>
+                                    <ul>
+                                        <li>Recently completed MCA from MIT-WPU, Pune</li>
+                                        <li>Enriching internship at Universal Tech</li>
+                                        <li>Built real-world SaaS applications and WordPress sites</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="about_section_item">
+                                <div class="about_icon">💻</div>
+                                <div class="about_text">
+                                    <h4>Technical Expertise</h4>
+                                    <ul>
+                                        <li>Java-based backends and responsive UIs</li>
+                                        <li>HTML, CSS, JavaScript, and PHP development</li>
+                                        <li>Git, MySQL, and LEMP stack experience</li>
+                                        <li>Performance optimization and maintainable code</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="about_section_item">
+                                <div class="about_icon">🧠</div>
+                                <div class="about_text">
+                                    <h4>What Drives Me</h4>
+                                    <ul>
+                                        <li>Solving real problems with innovative solutions</li>
+                                        <li>Learning something new every day</li>
+                                        <li>Collaborating with purpose-driven teams</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="about_section_item">
+                                <div class="about_icon">🌐</div>
+                                <div class="about_text">
+                                    <h4>Ready for Challenges</h4>
+                                    <ul>
+                                        <li>Full-stack application development</li>
+                                        <li>WordPress functionality enhancement</li>
+                                        <li>Machine learning model exploration</li>
+                                        <li>Contributing to impactful software projects</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="about_section_item">
+                                <div class="about_icon">🚀</div>
+                                <div class="about_text">
+                                    <h4>Let's Connect</h4>
+                                    <p>Looking for a curious mind, team player, and developer who's all-in for the journey ahead.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -281,46 +335,46 @@
                         <div class="box skill_card">
                             <h4>Programming Languages</h4>
                             <ul class="skill_pills">
-                                <li class="pill">Java</li>
-                                <li class="pill">SQL</li>
-                                <li class="pill">Python</li>
-                                <li class="pill">JavaScript</li>
+                                <li class="pill"><span class="skill_icon">☕</span> Java</li>
+                                <li class="pill"><span class="skill_icon">🗄️</span> SQL</li>
+                                <li class="pill"><span class="skill_icon">🐍</span> Python</li>
+                                <li class="pill"><span class="skill_icon">⚡</span> JavaScript</li>
                             </ul>
                         </div>
 
                         <div class="box skill_card">
                             <h4>Database Management</h4>
                             <ul class="skill_pills">
-                                <li class="pill">MySQL</li>
-                                <li class="pill">PostgreSQL</li>
-                                <li class="pill">MongoDB</li>
+                                <li class="pill"><span class="skill_icon">🐬</span> MySQL</li>
+                                <li class="pill"><span class="skill_icon">🐘</span> PostgreSQL</li>
+                                <li class="pill"><span class="skill_icon">🍃</span> MongoDB</li>
                             </ul>
                         </div>
 
                         <div class="box skill_card">
                             <h4>Web Development</h4>
                             <ul class="skill_pills">
-                                <li class="pill">HTML</li>
-                                <li class="pill">CSS</li>
-                                <li class="pill">Bootstrap</li>
-                                <li class="pill">PHP</li>
-                                <li class="pill">JavaScript</li>
-                                <li class="pill">WordPress (Themes)</li>
-                                <li class="pill">WordPress (Plugins)</li>
+                                <li class="pill"><span class="skill_icon">🌐</span> HTML</li>
+                                <li class="pill"><span class="skill_icon">🎨</span> CSS</li>
+                                <li class="pill"><span class="skill_icon">📱</span> Bootstrap</li>
+                                <li class="pill"><span class="skill_icon">🐘</span> PHP</li>
+                                <li class="pill"><span class="skill_icon">⚡</span> JavaScript</li>
+                                <li class="pill"><span class="skill_icon">📝</span> WordPress (Themes)</li>
+                                <li class="pill"><span class="skill_icon">🔌</span> WordPress (Plugins)</li>
                             </ul>
                         </div>
 
                         <div class="box skill_card">
                             <h4>Tools</h4>
                             <ul class="skill_pills">
-                                <li class="pill">Git</li>
-                                <li class="pill">GitHub</li>
-                                <li class="pill">Visual Studio Code</li>
-                                <li class="pill">MySQL Workbench</li>
-                                <li class="pill">phpMyAdmin</li>
-                                <li class="pill">Eclipse</li>
-                                <li class="pill">Canva</li>
-                                <li class="pill">MS Office</li>
+                                <li class="pill"><span class="skill_icon">📚</span> Git</li>
+                                <li class="pill"><span class="skill_icon">🐙</span> GitHub</li>
+                                <li class="pill"><span class="skill_icon">💻</span> Visual Studio Code</li>
+                                <li class="pill"><span class="skill_icon">🗄️</span> MySQL Workbench</li>
+                                <li class="pill"><span class="skill_icon">🐘</span> phpMyAdmin</li>
+                                <li class="pill"><span class="skill_icon">🌙</span> Eclipse</li>
+                                <li class="pill"><span class="skill_icon">🎨</span> Canva</li>
+                                <li class="pill"><span class="skill_icon">📊</span> MS Office</li>
                             </ul>
                         </div>
 
@@ -380,6 +434,36 @@
 
 
         <div id="contact_section">
+            <div class="contact_form_container">
+                <h2>Get In Touch</h2>
+                <p class="contact_intro">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+                
+                <form class="contact_form" id="contactForm">
+                    <div class="form_row">
+                        <div class="form_group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form_group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit_btn">
+                        <span class="btn_text">Send Message</span>
+                        <span class="btn_loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+            
             <div class="socialmedia_container">
                 <h2>Connect with me</h2>
                 <div class="box-grid">
@@ -421,6 +505,9 @@
         <footer class="footer"><a href="#home_section">Back to top</a></footer>
     </div>
     </div>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 </body>
 
 </html>
