@@ -14,12 +14,11 @@
 </head>
 
 <body>
-    <!-- Scroll Progress Bar -->
     <div id="scrollProgress" class="scroll-progress"></div>
     
-    <div class="navbar">
+    <header class="navbar">
         <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-        <div class="nav-links">
+        <nav class="nav-links">
             <a href="#home_section" class="nav_link">Home</a>
             <a href="#about_section" class="nav_link">About</a>
             <a href="#experience_section" class="nav_link">Experience</a>
@@ -28,26 +27,20 @@
             <a href="#certification_section" class="nav_link">Certifications</a>
             <a href="#intro_section" class="nav_link">Skills</a>
             <a href="#interests_section" class="nav_link">Interests</a>
-            <a href="#contact_section" class="nav_link">Contact</a>
-        </div>
+        </nav>
         <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
             <span class="theme-icon">☀️</span>
         </button>
-    </div>
+    </header>
 
-    <div class="main">
+    <main class="main">
         <div class="main2">
-            <div id="home_section">
+            <section id="home_section">
                 <div class="infocontainer">
-
-                    <div class="devpic">
-                        <img src="source/dev.JPG" alt="Bhavesh Hiray" loading="lazy" decoding="async">
-                    </div>
-
                     <div class="devinfo">
-                        <div class="name">Bhavesh Hiray</div>
-                        <div class="moreabout">Software Developer | Java | Full Stack Web Developer | WordPress | SQL |
-                            Python | MCA Graduate | Open to Work | Tech Enthusiast</div>
+                        <h1 class="name">Bhavesh Hiray</h1>
+                        <p class="moreabout">Software Developer | Java | Full Stack Web Developer | WordPress | SQL |
+                            Python | MCA Graduate | Open to Work | Tech Enthusiast</p>
                         <br>
                         <div class="buttons">
                             <a href="source/Bhavesh_Hiray_Resume.pdf" target="_blank"><button class="btn">View
@@ -55,459 +48,318 @@
                         </div>
                     </div>
 
+                    <div class="devpic">
+                        <img src="source/dev.JPG" alt="Bhavesh Hiray" loading="lazy" decoding="async">
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="about_section">
-                <div class="about_container">
-                    <h2>About Me</h2>
-                    <div class="about_content">
-                        <div class="about_intro">
-                            <h3>👋 Hi, I'm Bhavesh Hiray</h3>
-                            <p>A software developer with a passion for clean code, creative solutions, and continuous learning.</p>
+            <section id="about_section" class="about_container">
+                <h2>About Me</h2>
+                <p>👋 Hi, I’m Bhavesh Hiray — a software developer with a passion for clean code, creative solutions, and continuous learning. I’ve recently completed my MCA from MIT-WPU, Pune, and wrapped up an enriching internship at Universal Tech, where I built real-world SaaS applications, customised WordPress sites, and worked across the full stack.</p>
+                <p>💻 From crafting Java-based backends to designing responsive UIs with HTML, CSS, JavaScript, and PHP, I love bringing ideas to life through code. I’ve worked with tools like Git, MySQL, and the LEMP stack — and I'm always exploring ways to optimise performance, write maintainable code, and stay updated with industry trends.</p>
+                <p>🧠 What drives me? Solving real problems, learning something new every day, and collaborating with teams that build with purpose.</p>
+                <p>🌐 Whether it's building full-stack apps, enhancing WordPress functionality, or diving into machine learning models, I’m ready to take on new challenges and contribute to impactful software projects.</p>
+                <p>🚀 Let’s connect if you're looking for a curious mind, a team player, and a developer who’s all-in for the journey ahead.</p>
+            </section>
+
+            <section id="experience_section" class="experience_container">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline_item box">
+                        <div class="experience_role"><b>Software Developer Intern</b> | Universal Tech</div>
+                        <div class="experience_duration">Jan 2025 – June 2025</div>
+                        <p>Developed SaaS applications, client websites, and WordPress-based solutions in a remote team environment.</p>
+                        <p>Built custom WordPress plugins and themes; optimized site speed and responsiveness.</p>
+                        <p>Worked across the stack using HTML, CSS, JavaScript, PHP, MySQL, and Nginx. Used Git, Linux CLI, and DevTools for version control, debugging, and deployment.</p>
+                        <p>Improved UI consistency by aligning 10+ components with Figma specs, increasing user engagement by 15%.</p>
+                        <p>Delivered responsive UIs, integrated third‑party APIs, and configured LEMP environments; practiced SDLC and Agile collaboration.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="academic_section" class="academics_container">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline_item box">
+                        <div class="college"><b>Master of Computer Application (MCA)</b></div>
+                        <div class="course">MIT World Peace University, Pune, Maharashtra</div>
+                        <div class="courseyr">Aug 2023 – June 2025 • CGPA: 8.55</div>
+                    </div>
+                    <div class="timeline_item box">
+                        <div class="college"><b>Bachelor of Computer Application (BCA)</b></div>
+                        <div class="course">MES Abasaheb Garware College, Pune, Maharashtra</div>
+                        <div class="courseyr">Sep 2020 – Jun 2023 • CGPA: 8.84</div>
+                    </div>
+                    <div class="timeline_item box">
+                        <div class="college"><b>HSC</b></div>
+                        <div class="course">Maharaja Sayajirao Gaikwad Arts, Science & Commerce College, Malegaon, Dist. Nashik, Maharashtra</div>
+                        <div class="courseyr">Jun 2019 – Mar 2020 • Percentage: 78.46%</div>
+                    </div>
+                    <div class="timeline_item box">
+                        <div class="college"><b>SSC</b></div>
+                        <div class="course">Ratilal Virchand Shah Vidyalaya, Malegaon, Dist. Nashik, Maharashtra</div>
+                        <div class="courseyr">Jun 2017 – Mar 2018 • Percentage: 91.20%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="project_section" class="project_container">
+                <h2>Projects</h2>
+                <div class="projects_grid">
+                    <div class="box stagger-item">
+                        <img src="https://via.placeholder.com/400x250/d1d5db/374151?text=DineEase" alt="DineEase Project Thumbnail" class="project_thumb">
+                        <div class="projectdetails">
+                            <h3 class="project_title">DineEase: Order in Restaurant</h3>
+                            <div class="project_description">Customers can scan our QR placed on the table. It will redirect to a website where customers can see the hotel's food menu. Customers will give orders through a website to the hotel. The chef can see the order of the customer on display. After the food is ready, the waiter will serve it to the customer. Customers can re-order also. In the end, customers see their bills on the website and pay from there. It will save time in taking orders and there will be no mischief on the hotel bill.</div>
+                            <p class="tech_pills">
+                                <span class="pill tech">HTML</span>
+                                <span class="pill tech">CSS</span>
+                                <span class="pill tech">JavaScript</span>
+                            </p>
+                            <div class="buttons">
+                                <a href="https://bhavesh003.github.io/DineEase-OrderFood-in-Restaurant/" style="text-decoration: none;"><button class="btn">View Website</button></a>
+                                <a href="https://github.com/bhavesh003/DineEase-OrderFood-in-Restaurant/" style="text-decoration: none;"><button class="btn">View Code</button></a>
+                            </div>
                         </div>
-                        
-                        <div class="about_sections">
-                            <div class="about_section_item">
-                                <div class="about_icon">🎓</div>
-                                <div class="about_text">
-                                    <h4>Education & Background</h4>
-                                    <ul>
-                                        <li>Recently completed MCA from MIT-WPU, Pune</li>
-                                        <li>Enriching internship at Universal Tech</li>
-                                        <li>Built real-world SaaS applications and WordPress sites</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <div class="box stagger-item">
+                        <img src="https://via.placeholder.com/400x250/d1d5db/374151?text=Expression+Gesture" alt="Expression Gesture to Emoji Project Thumbnail" class="project_thumb">
+                        <div class="projectdetails">
+                            <h3 class="project_title">Expression Gesture to Emoji</h3>
+                            <div class="project_description">The Expression to Emoji Converter is a project aimed at recognizing facial expressions and gestures from webcam input and converting them into corresponding emojis in real-time. The system utilizes computer vision techniques, machine learning algorithms, and human-computer interaction principles to enable intuitive communication through emojis.</div>
+                            <p class="tech_pills">
+                                <span class="pill tech">Python</span>
+                                <span class="pill tech">OpenCV</span>
+                                <span class="pill tech">Mediapipe</span>
+                                <span class="pill tech">Keras</span>
+                                <span class="pill tech">TensorFlow</span>
+                            </p>
+                            <div class="buttons">
+                                <a href="https://github.com/bhavesh003/Expression-Gesture-to-Emoji" style="text-decoration: none;"><button class="btn">View Code</button></a>
                             </div>
-                            
-                            <div class="about_section_item">
-                                <div class="about_icon">💻</div>
-                                <div class="about_text">
-                                    <h4>Technical Expertise</h4>
-                                    <ul>
-                                        <li>Java-based backends and responsive UIs</li>
-                                        <li>HTML, CSS, JavaScript, and PHP development</li>
-                                        <li>Git, MySQL, and LEMP stack experience</li>
-                                        <li>Performance optimization and maintainable code</li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="box stagger-item">
+                        <img src="https://via.placeholder.com/400x250/d1d5db/374151?text=Expense+Tracker" alt="Expense and Income Tracker Project Thumbnail" class="project_thumb">
+                        <div class="projectdetails">
+                            <h3 class="project_title">Expense and Income Tracker</h3>
+                            <div class="project_description">A simple Java-based application for tracking expenses and incomes. Manage your financial transactions with an easy-to-use interface.</div>
+                            <p class="tech_pills">
+                                <span class="pill tech">Java</span>
+                                <span class="pill tech">Swing</span>
+                                <span class="pill tech">FlatLaf</span>
+                            </p>
+                            <div class="buttons">
+                                <a href="https://github.com/bhavesh003/Expense_Income_Tracker" style="text-decoration: none;"><button class="btn">View Code</button></a>
                             </div>
-                            
-                            <div class="about_section_item">
-                                <div class="about_icon">🧠</div>
-                                <div class="about_text">
-                                    <h4>What Drives Me</h4>
-                                    <ul>
-                                        <li>Solving real problems with innovative solutions</li>
-                                        <li>Learning something new every day</li>
-                                        <li>Collaborating with purpose-driven teams</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="about_section_item">
-                                <div class="about_icon">🌐</div>
-                                <div class="about_text">
-                                    <h4>Ready for Challenges</h4>
-                                    <ul>
-                                        <li>Full-stack application development</li>
-                                        <li>WordPress functionality enhancement</li>
-                                        <li>Machine learning model exploration</li>
-                                        <li>Contributing to impactful software projects</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="about_section_item">
-                                <div class="about_icon">🚀</div>
-                                <div class="about_text">
-                                    <h4>Let's Connect</h4>
-                                    <p>Looking for a curious mind, team player, and developer who's all-in for the journey ahead.</p>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="box stagger-item">
+                        <img src="https://via.placeholder.com/400x250/d1d5db/374151?text=Portfolio" alt="Personal Portfolio Website Thumbnail" class="project_thumb">
+                        <div class="projectdetails">
+                            <h3 class="project_title">Personal Portfolio Website</h3>
+                            <div class="project_description">This portfolio website serves as a platform to display my projects, skills, and professional experience. It features a responsive design, smooth scrolling navigation, dynamic content loading, and interactive elements.</div>
+                            <p class="tech_pills">
+                                <span class="pill tech">HTML</span>
+                                <span class="pill tech">CSS</span>
+                                <span class="pill tech">JavaScript</span>
+                            </p>
+                            <div class="buttons">
+                                <a href="https://bhavesh003.github.io/Bhavesh-Portfolio-Website/" style="text-decoration: none;"><button class="btn">View Website</button></a>
+                                <a href="https://github.com/bhavesh003/Bhavesh-Portfolio-Website/" style="text-decoration: none;"><button class="btn">View Code</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="experience_section">
-                <div class="experience_container">
-                    <h2>Experience</h2>
-                    <div class="timeline">
-                        <div class="timeline_item box">
-                            <div class="experience_role"><b>Software Developer Intern</b> | Universal Tech</div>
-                            <div class="experience_duration">Jan 2025 – June 2025</div>
-                            <ul class="skill_list">
-                                <li class="skill_list_item">Developed SaaS applications, client websites, and WordPress-based solutions in a remote team environment.</li>
-                                <li class="skill_list_item">Built custom WordPress plugins and themes; optimized site speed and responsiveness.</li>
-                                <li class="skill_list_item">Worked across the stack using HTML, CSS, JavaScript, PHP, MySQL, and Nginx. Used Git, Linux CLI, and DevTools for version control, debugging, and deployment.</li>
-                                <li class="skill_list_item">Improved UI consistency by aligning 10+ components with Figma specs, increasing user engagement by 15%.</li>
-                                <li class="skill_list_item">Delivered responsive UIs, integrated third‑party APIs, and configured LEMP environments; practiced SDLC and Agile collaboration.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="academic_section">
-                <div class="academics_container">
-                    <h2>Education</h2>
-                    <div class="timeline">
-                        <div class="timeline_item box">
-                            <div class="college"><b>Master of Computer Application (MCA)</b></div>
-                            <div class="course">MIT World Peace University, Pune, Maharashtra</div>
-                            <div class="courseyr">Aug 2023 – June 2025 • CGPA: 8.55</div>
-                        </div>
-
-                        <div class="timeline_item box">
-                            <div class="college"><b>Bachelor of Computer Application (BCA)</b></div>
-                            <div class="course">MES Abasaheb Garware College, Pune, Maharashtra</div>
-                            <div class="courseyr">Sep 2020 – Jun 2023 • CGPA: 8.84</div>
-                        </div>
-
-                        <div class="timeline_item box">
-                            <div class="college"><b>HSC</b></div>
-                            <div class="course">Maharaja Sayajirao Gaikwad Arts, Science & Commerce College, Malegaon, Dist. Nashik, Maharashtra</div>
-                            <div class="courseyr">Jun 2019 – Mar 2020 • Percentage: 78.46%</div>
-                        </div>
-
-                        <div class="timeline_item box">
-                            <div class="college"><b>SSC</b></div>
-                            <div class="course">Ratilal Virchand Shah Vidyalaya, Malegaon, Dist. Nashik, Maharashtra</div>
-                            <div class="courseyr">Jun 2017 – Mar 2018 • Percentage: 91.20%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="project_section">
-                <div class="project_container">
-                    <h2>Projects</h2>
-
-                    <div class="projects_grid">
-
+            <section id="certification_section" class="certification">
+                <div class="certification_container">
+                    <h2>Certifications</h2>
+                    <div class="box-grid">
                         <div class="box">
-                            <div class="projectdetails">
-                                <div class="project_title">DineEase: Order in Restaurant
-                                </div>
-                                <div class="project_description">Customers can scan our QR placed on the table. It will
-                                    redirect to a website where customers can see the hotel's food menu. Customers will
-                                    give orders through a website to the hotel. The chef can see the order of the
-                                    customer on display. After the food is ready, the waiter will serve it to the
-                                    customer. Customers can re-order also. In the end, customers see their bills on the
-                                    website and pay from there. It will save time in taking orders and there will be no
-                                    mischief on the hotel bill.</div>
-                                <ul class="tech_pills">
-                                    <li class="pill tech">HTML</li>
-                                    <li class="pill tech">CSS</li>
-                                    <li class="pill tech">JavaScript</li>
-                                </ul>
-                                <div class="buttons">
-                                    <br>
-                                    <a href="https://bhavesh003.github.io/DineEase-OrderFood-in-Restaurant/"
-                                        style="text-decoration: none;"><Button class="btn">View Website</Button></a>
-                                    <a href="https://github.com/bhavesh003/DineEase-OrderFood-in-Restaurant/"
-                                        style="text-decoration: none;"><Button class="btn">View Code</Button></a>
-                                </div>
-                            </div>
+                            <div class="cer_name"><b>The Web Developer Bootcamp</b></div>
+                            <div class="cer_comp">Udemy</div>
+                            <a href="https://drive.google.com/file/d/15P7tkrjWcA12cWrXJkHCXFRcS9TKAZMM/view?usp=drive_link" style="text-decoration: none;" target="_blank">View Certificate</a>
                         </div>
-
                         <div class="box">
-                            <div class="projectdetails">
-                                <div class="project_title">Expression Gesture to Emoji</div>
-                                <div class="project_description">The Expression to Emoji Converter is a project aimed at
-                                    recognizing facial expressions and gestures from webcam input and converting them
-                                    into
-                                    corresponding emojis in real-time. The system utilizes computer vision techniques,
-                                    machine
-                                    learning algorithms, and human-computer interaction principles to enable intuitive
-                                    communication through emojis.</div>
-                                <ul class="tech_pills">
-                                    <li class="pill tech">Python</li>
-                                    <li class="pill tech">OpenCV</li>
-                                    <li class="pill tech">Mediapipe</li>
-                                    <li class="pill tech">Keras</li>
-                                    <li class="pill tech">TensorFlow</li>
-                                </ul>
-                                <div class="buttons">
-                                    <br>
-                                    <a href="https://github.com/bhavesh003/Expression-Gesture-to-Emoji"
-                                        style="text-decoration: none;"><Button class="btn">View Code</Button></a>
-                                </div>
-                            </div>
+                            <div class="cer_name"><b>Diploma in Computer Training Education</b></div>
+                            <div class="cer_comp">ITT Council - Information Technology and Technical Education Council, Delhi</div>
+                            <a href="https://drive.google.com/file/d/17m4rzdrWTz2RJevza9Bd-0ysQbe-CiCF/view?usp=drive_link" style="text-decoration: none;" target="_blank">View Certificate</a>
                         </div>
-
                         <div class="box">
-                            <div class="projectdetails">
-                                <div class="project_title">Expense and Income Tracker</div>
-                                <div class="project_description">A simple Java-based application for tracking expenses
-                                    and incomes. Manage your financial transactions with an easy-to-use interface.</div>
-                                <ul class="tech_pills">
-                                    <li class="pill tech">Java</li>
-                                    <li class="pill tech">Swing</li>
-                                    <li class="pill tech">FlatLaf</li>
-                                </ul>
-                                <div class="buttons">
-                                    <br>
-                                    <a href="https://github.com/bhavesh003/Expense_Income_Tracker"
-                                        style="text-decoration: none;"><Button class="btn">View Code</Button></a>
-                                </div>
-                            </div>
+                            <div class="cer_name"><b>Power BI for Beginners</b></div>
+                            <div class="cer_comp">SimplilearnSimplilearn</div>
+                            <a href="https://drive.google.com/file/d/1eu8YosBY8O7b0pNy1ITClkvJJR_xJMIG/view?usp=drive_link" style="text-decoration: none;" target="_blank">View Certificate</a>
                         </div>
-
                         <div class="box">
-                            <div class="projectdetails">
-                                <div class="project_title">Personal Portfolio Website</div>
-                                <div class="project_description">This portfolio website serves as a platform to display
-                                    my projects, skills, and professional experience. It features a responsive design,
-                                    smooth scrolling navigation, dynamic content loading, and interactive elements.
-                                </div>
-                                <ul class="tech_pills">
-                                    <li class="pill tech">HTML</li>
-                                    <li class="pill tech">CSS</li>
-                                    <li class="pill tech">JavaScript</li>
-                                </ul>
-                                <div class="buttons">
-                                    <br>
-                                    <a href="https://bhavesh003.github.io/Bhavesh-Portfolio-Website/"
-                                        style="text-decoration: none;"><Button class="btn">View Website</Button></a>
-                                    <a href="https://github.com/bhavesh003/Bhavesh-Portfolio-Website/"
-                                        style="text-decoration: none;"><Button class="btn">View Code</Button></a>
-                                </div>
-                            </div>
+                            <div class="cer_name"><b>Java (Basic)</b></div>
+                            <div class="cer_comp">HackerRank</div>
+                            <a href="https://drive.google.com/file/d/1evBVcFM_xRCby-25IzZ-_cGyM-debV9o/view?usp=drive_link" style="text-decoration: none;" target="_blank">View Certificate</a>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="certification_section">
-                <div class="certification">
-                    <div class="certification_container">
-                        <h2>Certifications</h2>
-                        <div class="box-grid">
-
-                            <div class="box">
-                                <div class="cer_name"><b>The Web Developer Bootcamp</b></div>
-                                <div class="cer_comp">Udemy</div>
-                                <a href="https://drive.google.com/file/d/15P7tkrjWcA12cWrXJkHCXFRcS9TKAZMM/view?usp=drive_link"
-                                    style="text-decoration: none;" target="_blank">View Certificate</a>
-                            </div>
-
-                            <div class="box">
-                                <div class="cer_name"><b>Diploma in Computer Training Education</b></div>
-                                <div class="cer_comp">ITT Council - Information Technology and Technical Education
-                                    Council, Delhi</div>
-                                <a href="https://drive.google.com/file/d/17m4rzdrWTz2RJevza9Bd-0ysQbe-CiCF/view?usp=drive_link"
-                                    style="text-decoration: none;" target="_blank">View Certificate</a>
-                            </div>
-                            <div class="box">
-                                <div class="cer_name"><b>Power BI for Beginners</b></div>
-                                <div class="cer_comp">SimplilearnSimplilearn</div>
-                                <a href="https://drive.google.com/file/d/1eu8YosBY8O7b0pNy1ITClkvJJR_xJMIG/view?usp=drive_link"
-                                    style="text-decoration: none;" target="_blank">View Certificate</a>
-                            </div>
-                            <div class="box">
-                                <div class="cer_name"><b>Java (Basic)</b></div>
-                                <div class="cer_comp">HackerRank</div>
-                                <a href="https://drive.google.com/file/d/1evBVcFM_xRCby-25IzZ-_cGyM-debV9o/view?usp=drive_link"
-                                    style="text-decoration: none;" target="_blank">View Certificate</a>
-                            </div>
-
-                            <div class="box">
-                                <div class="cer_name"><b>TCS Communication Skills</b></div>
-                                <div class="cer_comp">TCS iON</div>
-                                <a href="https://drive.google.com/file/d/17gcX0oz0aV-vucBMI2WGnZDXVeaz87LU/view?usp=drive_link"
-                                    style="text-decoration: none;" target="_blank">View Certificate</a>
-                            </div>
-
+                        <div class="box">
+                            <div class="cer_name"><b>TCS Communication Skills</b></div>
+                            <div class="cer_comp">TCS iON</div>
+                            <a href="https://drive.google.com/file/d/17gcX0oz0aV-vucBMI2WGnZDXVeaz87LU/view?usp=drive_link" style="text-decoration: none;" target="_blank">View Certificate</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="intro_section">
-                <div class="skill_container">
-                    <h2>Skills</h2>
-
-                    <div class="skills_grid">
-                        <div class="box skill_card">
-                            <h4>Programming Languages</h4>
-                            <ul class="skill_pills">
-                                <li class="pill"><span class="skill_icon">☕</span> Java</li>
-                                <li class="pill"><span class="skill_icon">🗄️</span> SQL</li>
-                                <li class="pill"><span class="skill_icon">🐍</span> Python</li>
-                                <li class="pill"><span class="skill_icon">⚡</span> JavaScript</li>
-                            </ul>
-                        </div>
-
-                        <div class="box skill_card">
-                            <h4>Database Management</h4>
-                            <ul class="skill_pills">
-                                <li class="pill"><span class="skill_icon">🐬</span> MySQL</li>
-                                <li class="pill"><span class="skill_icon">🐘</span> PostgreSQL</li>
-                                <li class="pill"><span class="skill_icon">🍃</span> MongoDB</li>
-                            </ul>
-                        </div>
-
-                        <div class="box skill_card">
-                            <h4>Web Development</h4>
-                            <ul class="skill_pills">
-                                <li class="pill"><span class="skill_icon">🌐</span> HTML</li>
-                                <li class="pill"><span class="skill_icon">🎨</span> CSS</li>
-                                <li class="pill"><span class="skill_icon">📱</span> Bootstrap</li>
-                                <li class="pill"><span class="skill_icon">🐘</span> PHP</li>
-                                <li class="pill"><span class="skill_icon">⚡</span> JavaScript</li>
-                                <li class="pill"><span class="skill_icon">📝</span> WordPress (Themes)</li>
-                                <li class="pill"><span class="skill_icon">🔌</span> WordPress (Plugins)</li>
-                            </ul>
-                        </div>
-
-                        <div class="box skill_card">
-                            <h4>Tools</h4>
-                            <ul class="skill_pills">
-                                <li class="pill"><span class="skill_icon">📚</span> Git</li>
-                                <li class="pill"><span class="skill_icon">🐙</span> GitHub</li>
-                                <li class="pill"><span class="skill_icon">💻</span> Visual Studio Code</li>
-                                <li class="pill"><span class="skill_icon">🗄️</span> MySQL Workbench</li>
-                                <li class="pill"><span class="skill_icon">🐘</span> phpMyAdmin</li>
-                                <li class="pill"><span class="skill_icon">🌙</span> Eclipse</li>
-                                <li class="pill"><span class="skill_icon">🎨</span> Canva</li>
-                                <li class="pill"><span class="skill_icon">📊</span> MS Office</li>
-                            </ul>
-                        </div>
-
-                        <div class="box skill_card">
-                            <h4>Technical Knowledge</h4>
-                            <ul class="skill_pills">
-                                <li class="pill">Object-Oriented Programming (OOP)</li>
-                                <li class="pill">SQL Integration</li>
-                                <li class="pill">RDBMS</li>
-                                <li class="pill">Machine Learning (Supervised & Unsupervised)</li>
-                                <li class="pill">API Development</li>
-                            </ul>
-                        </div>
-
-                        <div class="box skill_card">
-                            <h4>Soft Skills</h4>
-                            <ul class="skill_pills">
-                                <li class="pill">Adaptability</li>
-                                <li class="pill">Flexibility</li>
-                                <li class="pill">Leadership</li>
-                                <li class="pill">Collaboration</li>
-                                <li class="pill">Teamwork</li>
-                                <li class="pill">Problem‑Solving</li>
-                                <li class="pill">Communication</li>
-                            </ul>
+            <section id="intro_section" class="skill_container">
+                <h2>Skills</h2>
+                <div class="skills_grid">
+                    <div class="box skill_card stagger-item">
+                        <h4>Programming Languages</h4>
+                        <div class="skill_progress">
+                            <div class="skill_item">
+                                <span class="skill_name">Java</span>
+                                <div class="progress_bar">
+                                    <div class="progress_fill" style="width: 90%"></div>
+                                </div>
+                                <span class="skill_percentage">90%</span>
+                            </div>
+                            <div class="skill_item">
+                                <span class="skill_name">SQL</span>
+                                <div class="progress_bar">
+                                    <div class="progress_fill" style="width: 85%"></div>
+                                </div>
+                                <span class="skill_percentage">85%</span>
+                            </div>
+                            <div class="skill_item">
+                                <span class="skill_name">Python</span>
+                                <div class="progress_bar">
+                                    <div class="progress_fill" style="width: 80%"></div>
+                                </div>
+                                <span class="skill_percentage">80%</span>
+                            </div>
+                            <div class="skill_item">
+                                <span class="skill_name">JavaScript</span>
+                                <div class="progress_bar">
+                                    <div class="progress_fill" style="width: 85%"></div>
+                                </div>
+                                <span class="skill_percentage">85%</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="box skill_card stagger-item">
+                        <h4>Database Management</h4>
+                        <p class="skill_pills">
+                            <span class="pill">MySQL</span>
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">MongoDB</span>
+                        </p>
+                    </div>
+                    <div class="box skill_card stagger-item">
+                        <h4>Web Development</h4>
+                        <p class="skill_pills">
+                            <span class="pill">HTML</span>
+                            <span class="pill">CSS</span>
+                            <span class="pill">Bootstrap</span>
+                            <span class="pill">PHP</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">WordPress (Themes)</span>
+                            <span class="pill">WordPress (Plugins)</span>
+                        </p>
+                    </div>
+                    <div class="box skill_card stagger-item">
+                        <h4>Tools</h4>
+                        <p class="skill_pills">
+                            <span class="pill">Git</span>
+                            <span class="pill">GitHub</span>
+                            <span class="pill">Visual Studio Code</span>
+                            <span class="pill">MySQL Workbench</span>
+                            <span class="pill">phpMyAdmin</span>
+                            <span class="pill">Eclipse</span>
+                            <span class="pill">Canva</span>
+                            <span class="pill">MS Office</span>
+                        </p>
+                    </div>
+                    <div class="box skill_card stagger-item">
+                        <h4>Technical Knowledge</h4>
+                        <p class="skill_pills">
+                            <span class="pill">Object-Oriented Programming (OOP)</span>
+                            <span class="pill">SQL Integration</span>
+                            <span class="pill">RDBMS</span>
+                            <span class="pill">Machine Learning (Supervised & Unsupervised)</span>
+                            <span class="pill">API Development</span>
+                        </p>
+                    </div>
+                    <div class="box skill_card stagger-item">
+                        <h4>Soft Skills</h4>
+                        <p class="skill_pills">
+                            <span class="pill">Adaptability</span>
+                            <span class="pill">Flexibility</span>
+                            <span class="pill">Leadership</span>
+                            <span class="pill">Collaboration</span>
+                            <span class="pill">Teamwork</span>
+                            <span class="pill">Problem‑Solving</span>
+                            <span class="pill">Communication</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
 
-        <div id="interests_section">
-            <div class="interest_container">
-                <h2>Interests & Hobbies</h2>
-
-                <div class="box-grid">
-                    <div class="box">
-                        <h3>Cricket</h3>
-                        <p>Cricket fan, passionate about the game.</p>
-                    </div>
-
-                    <div class="box">
-                        <h3>Chess</h3>
-                        <p>Enjoys every strategic move.<br>Chess.com ID <u>thebhavesh03</u></p>
-                    </div>
-                    <div class="box">
-                        <h3>Editing</h3>
-                        <p>Editor, shaping stories with precision.</p>
-                    </div>
-                    <div class="box">
-                        <h3>Self-Financing</h3>
-                        <p>Self-financer, turning ideas into reality.</p>
-                    </div>
+        <section id="interests_section" class="interest_container">
+            <h2>Interests & Hobbies</h2>
+            <div class="box-grid">
+                <div class="box">
+                    <h3>Cricket</h3>
+                    <p>Cricket fan, passionate about the game.</p>
+                </div>
+                <div class="box">
+                    <h3>Chess</h3>
+                    <p>Enjoys every strategic move.<br>Chess.com ID <u>thebhavesh03</u></p>
+                </div>
+                <div class="box">
+                    <h3>Editing</h3>
+                    <p>Editor, shaping stories with precision.</p>
+                </div>
+                <div class="box">
+                    <h3>Self-Financing</h3>
+                    <p>Self-financer, turning ideas into reality.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <div id="contact_section">
-            <div class="contact_form_container">
-                <h2>Get In Touch</h2>
-                <p class="contact_intro">I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
-                
-                <form class="contact_form" id="contactForm">
-                    <div class="form_row">
-                        <div class="form_group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form_group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form_group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-                    <div class="form_group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn submit_btn">
-                        <span class="btn_text">Send Message</span>
-                        <span class="btn_loading" style="display: none;">Sending...</span>
-                    </button>
-                </form>
-            </div>
-            
-            <div class="socialmedia_container">
-                <h2>Connect with me</h2>
-                <div class="box-grid">
-
-                    <div class="box">
-                        <a class="socialmedia_items" href="https://www.linkedin.com/in/the-bhavesh-03/" target="_blank"
-                            rel="noopener">
-                            <img alt="LinkedIn" src="source/lkd.png" width="50" height="50" loading="lazy"
-                                decoding="async">
-                        </a>
-                        <p>LinkedIn</p>
-                    </div>
-
-                    <div class="box">
-                        <a class="socialmedia_items" href="https://github.com/bhavesh003" target="_blank"
-                            rel="noopener">
-                            <img alt="GitHub" src="source/gh.png" width="50" height="50" loading="lazy"
-                                decoding="async">
-                        </a>
-                        <p>GitHub</p>
-                    </div>
-                    <div class="box">
-                        <a class="socialmedia_items" href="https://www.instagram.com/the_bhavesh_03" target="_blank"
-                            rel="noopener">
-                            <img alt="Instagram" src="source/ig.png" width="50" height="50" loading="lazy"
-                                decoding="async">
-                        </a>
-                        <p>Instagram</p>
-                    </div>
-                    <div class="box">
-                        <a class="socialmedia_items" href="https://www.hackerrank.com/profile/itsbhavesh03"
-                            target="_blank" rel="noopener"><img alt="HackerRank" src="source/hr.webp" width="50"
-                                height="50" loading="lazy" decoding="async"></a>
-                        <p>HackerRank</p>
-                    </div>
+        <section id="contact_section" class="socialmedia_container">
+            <h2>Connect with me</h2>
+            <div class="box-grid">
+                <div class="box">
+                    <a class="socialmedia_items" href="https://www.linkedin.com/in/the-bhavesh-03/" target="_blank" rel="noopener">
+                        <img alt="LinkedIn" src="source/lkd.png" width="50" height="50" loading="lazy" decoding="async">
+                    </a>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="box">
+                    <a class="socialmedia_items" href="https://github.com/bhavesh003" target="_blank" rel="noopener">
+                        <img alt="GitHub" src="source/gh.png" width="50" height="50" loading="lazy" decoding="async">
+                    </a>
+                    <p>GitHub</p>
+                </div>
+                <div class="box">
+                    <a class="socialmedia_items" href="https://www.instagram.com/the_bhavesh_03" target="_blank" rel="noopener">
+                        <img alt="Instagram" src="source/ig.png" width="50" height="50" loading="lazy" decoding="async">
+                    </a>
+                    <p>Instagram</p>
                 </div>
             </div>
-        </div>
+        </section>
         <footer class="footer"><a href="#home_section">Back to top</a></footer>
-    </div>
-    </div>
+    </main>
     
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-</body>
 
+    <div id="resumeModal" class="modal">
+        <div class="modal_content">
+            <button id="closeResume" class="modal_close" aria-label="Close modal">&times;</button>
+            <iframe id="resumeIframe" src="source/Bhavesh_Hiray_Resume.pdf" title="Resume"></iframe>
+        </div>
+    </div>
+</body>
 </html>
